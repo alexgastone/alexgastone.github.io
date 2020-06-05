@@ -13,6 +13,7 @@
     <meta property="og:image" content="img/preview.jpg" />
 
     <title>Alexandra Gastone Guilabert</title>
+    <link rel="icon" href="img/favicon.png">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -111,7 +112,7 @@
                             <div class="project-text w-100 my-auto text-center text-lg-right">
                                 <h4 class="text-white">Disaster Response Classification with BERT</h4>
                                 <p class="mb-0 text-white-50">
-                                    Finetunes a pretrained BERT Transformer model on labeled disaster messages from social, direct, and news sources for multilabel text classification. Using Flask, deployed the model through a web app for real-time inference of user queries. Check out the project repo <a href="https://github.com/alexgastone/disaster_response_multilabel_classification">here</a>.
+                                    Finetunes a pretrained BERT Transformer model on labeled disaster messages from social, direct, and news sources for multilabel text classification (more details on the training dataset by running the <i>D3.js</i> co-occurrence matrix visualization I built). Using Flask, deployed the model through a web app for real-time inference of user queries. Check out the project repo <a href="https://github.com/alexgastone/disaster_response_multilabel_classification">here</a> for the model, the visualization of the training data, and instructions to run the web app.
                                 </p>
                                 <hr class="d-none d-lg-block mb-0 mr-0">
                             </div>
@@ -133,10 +134,9 @@
                                 <h4 class="text-white">Sentiment Analysis on Airbnb reviews for a Collaborative Recommender System</h4>
                                 <p class="mb-0 text-white-50">
                                     Generates personalised recommendations for Airbnb users based on sentiment polarity of their and other users' comments.
-                                    For more details, check out my <a href="https://github.com/alexgastone/AirbnbRecommend">Github repo</a>, my <a href="https://medium.com/@alexandra.gg150/how-to-build-a-recommender-system-for-airbnb-in-python-3a92ad500fa5">article on Medium</a> for a simple implementation, this
+                                    For more details, check out the <a href="https://github.com/alexgastone/AirbnbRecommend">Github repo</a>, my <a href="https://medium.com/@alexandra.gg150/how-to-build-a-recommender-system-for-airbnb-in-python-3a92ad500fa5">article on Medium</a> for an accessible guide to a simple implementation, this
                                     <a href="https://airbnb-bos-polarity.herokuapp.com/">dashboard</a> I created with <i>Streamlit</i> (deployed on <i>Heroku</i>) on estimated sentiment polarity data, 
                                     or this <a href="tableau_rec.html"> Tableau dashboard</a> for polarity and review scores by location.
-
                                 </p>
                                 <hr class="d-none d-lg-block mb-0 ml-0">
                             </div>
@@ -156,7 +156,7 @@
                             <div class="project-text w-100 my-auto text-center text-lg-right">
                                 <h4 class="text-white">Tweet Sentiment Extraction: a Question Answering Model with ALBERT</h4>
                                 <p class="mb-0 text-white-50">
-                                    Uses Hugging Face's implemention of the ALBERT Transformer model on a Question Answering task fine tuned on a custom SQuAD-like dataset of tweets to extract
+                                    Uses Hugging Face's implemention of the ALBERT Transformer model on a Question Answering task, fine tuned on a custom SQuAD-like dataset of tweets, to extract
                                     the words that best support a positive, negative or neutral sentiment label. Currently evaluates to a score of <i>0.7114 </i>(top submission at time of writing is <i>0.724</i>).
                                     Check out the <a href="https://github.com/alexgastone/tweet_extraction/tree/master">project</a>.
                                 </p>
@@ -178,8 +178,8 @@
                             <div class="project-text w-100 my-auto text-center text-lg-right">
                                 <h4 class="text-white">Anomaly Detection of Lorenz Attractor model data</h4>
                                 <p class="mb-0 text-white-50">
-                                    Trained a feed forward neural net (using <i>Tensorflow</i>) on extracted frequency spectrum to detect anomalous data (see <a href="https://github.com/alexgastone/ML_projects/blob/master/AnomalyDetection.ipynb">Github repo</a>).
-                                    Will be extended in future to work for unsupervised anomaly detection problems using an autoencoder trained with an LSTM.
+                                    Trained a feed forward neural net (<i>Tensorflow</i> + <i>Keras</i>) on extracted frequency spectrum data of a Lorenz attractor model to detect anomalies (supervised). To address the lack of labeled anomalies in these types of problems, additionally trained a LSTM autoencoder on healthy data and set an error threshold for the loss above which a data point will be classified as an anomaly (see <a href="https://github.com/alexgastone/ML_projects/blob/master/AnomalyDetection.ipynb">Github repo</a>).
+                                    
                                 </p>
                                 <hr class="d-none d-lg-block mb-0 mr-0">
                             </div>
